@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "fuse.h": "c",
-        "vector.h": "c",
-        "stdlib.h": "c"
-    },
-    "cmake.configureOnOpen": true,
-    "cmake.generator": "Unix Makefiles"
-}
