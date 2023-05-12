@@ -1,16 +1,17 @@
 #include <stdio.h>
-#include <bufferfs/vector.h>
+#include <vector.h>
 
 
-vector v; // vector of integers
-
+/// @brief Parameters of a session
+/// @param files_dir                directory where buffer files are stored
+/// @param buffer_size              default file buffer size, may be overriden by file-specific settings
+struct params {
+    const char *files_dir;
+    const char *buffer_size;
+};
 
 int main()
 {
-    if(vector_init(&v, sizeof(long long), 0) == NULL) {
-        printf("Vector init returned NULL\n");
-        return 0;
-    }
-    
+
     return 0;
 }
