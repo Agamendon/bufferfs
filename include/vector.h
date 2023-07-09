@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-/// @brief A simple C++-like vector. Should be initialized via fv_init.
+/// @brief A simple C++-like vector. Should be initialized via vector_init.
 /// All access operation should be conducted via library's functions
 /// @param el_size              size of one element in bytes
 /// @param length               vector length

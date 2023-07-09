@@ -51,7 +51,7 @@ static void *vector_half_realloc(vector *v)
 
 
 //
-// PUBLIC FUNCTIONS
+// LIBRARY FUNCTIONS
 //
 
 
