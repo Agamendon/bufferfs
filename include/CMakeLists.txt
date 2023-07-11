@@ -1,17 +1,9 @@
-# Here some of the dependencies are downloaded
+target_sources(bfs_lib
+    PRIVATE
+        RTree.hpp
+        bfs_buffer.hpp
+        bfs_file.hpp
+        bfs_functions.hpp
+)
 
-include(FetchContent)
-
-
-#
-# xxhash
-#
-# set(XXHASH_GIT_REPO "https://github.com/Cyan4973/xxHash")
-# set(XXHASH_GIT_TAG "f4bef929aa854e9f52a303c5e58fd52855a0ecfa")
-# FetchContent_Declare(
-#     xxhash
-#     GIT_REPOSITORY ${XXHASH_GIT_REPO}
-#     GIT_TAG ${XXHASH_GIT_TAG}
-# )
-# message(STATUS "Loading xxhash - ${XXHASH_GIT_REPO}")
-# FetchContent_MakeAvailable(xxhash)
+target_include_directories(bfs_lib PUBLIC ${CMAKE_CURRECT_LIST_DIR})

@@ -1,13 +1,7 @@
-add_library(bufferfs_lib
-    # library files
-    "../include/vector.h"
-    "../include/splay_tree.h"
-    # "../include/file_buffer.h"
-
-    # source files
-    "./vector.c"
-    "./splay_tree.c"
-    # "./file_buffer.c"
+target_sources(bfs_lib
+    PRIVATE
+        bfs_buffer.cpp
+        bfs_file.cpp
 )
 
-target_include_directories(bufferfs_lib PUBLIC ../include)
+target_include_directories(bfs_lib PUBLIC ${CMAKE_CURRECT_LIST_DIR})
