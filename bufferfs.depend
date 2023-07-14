@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1689272209 source:/home/heorhii/bufferfs/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1689302907 source:/home/heorhii/bufferfs/bufferfs.c
+	<stdio.h>
+	<bfs_buffer.h>
+	<stdlib.h>
+
+1689289730 /home/heorhii/bufferfs/include/bfs_buffer.h
+	<stdint.h>
+	<stdint.h>
+	<unistd.h>
+	<stdio.h>
+
+1689302348 source:/home/heorhii/bufferfs/src/bfs_buffer.c
+	<bfs_buffer.h>
+	<stdlib.h>
+	<errno.h>
+

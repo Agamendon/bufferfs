@@ -1,32 +1,23 @@
 #include <stdio.h>
-#include <vector.h>
-#include <splay_tree.h>
+#include <bfs_buffer.h>
+#include <stdlib.h>
 
-
-int cmp(int *a, int *b)
-{
-    if (*a < *b)
-        return -1;
-    else if (*a == *b)
-        return 0;
-    else
-        return 1;
-}
 
 
 int main()
 {
-    splay_tree spl;
-    splay_tree_init(&spl, sizeof(int), *cmp, *free);
-    int a = 2;
-    int b = 1;
-    int c = 3;
-    splay_tree_insert(&spl, &a);
-    splay_tree_insert(&spl, &b);
-    splay_tree_insert(&spl, &c);
-
-    printf("%d\n", *((int *) splay_tree_find(&spl, &c)->value));
-    printf("%d\n", *((int *) splay_tree_find(&spl, &b)->value));
-    printf("%d\n", *((int *) splay_tree_find(&spl, &a)->value));
+    struct bfs_buffer buffer;
+    const uint32_t buffer_descriptor = 1;
+    const off_t buffer_offset = 8;
+    const size_t buffer_size = 8;
+    const uint32_t buffer_chunk = 0;
+    bfs_buffer_init(&buffer, buffer_descriptor, buffer_offset,
+                    buffer_size, buffer_chunk);
+    char *from = "123456789012345678901234567890";
+    FILE *stream = fopen("/home/heorhii/bufferfs/test.txt", "r+");
+    printf("%d\n", bfs_buffer_write(&buffer, from, 8, 0, stream, 10));
+    if(bfs_buffer_slide(&buffer, -5, stream, 10) != 0)
+        printf("slide error\n");
+    printf("Test completed\n");
     return 0;
 }

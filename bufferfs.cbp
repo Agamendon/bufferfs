@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="bufferfs" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/bufferfs" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="--debug" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/bufferfs" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="--opt-code-size" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="/home/heorhii/bufferfs/include" />
+			<Add directory="/home/heorhii/bufferfs/src" />
+		</Compiler>
+		<Unit filename="CMakeLists.txt" />
+		<Unit filename="bufferfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bufferfs.cbp" />
+		<Unit filename="bufferfs.layout" />
+		<Unit filename="include/CMakeLists.txt" />
+		<Unit filename="include/bfs_buffer.h" />
+		<Unit filename="src/CMakeLists.txt" />
+		<Unit filename="src/bfs_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test.txt" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
