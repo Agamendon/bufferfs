@@ -7,11 +7,11 @@
 int main()
 {
     struct bfs_buffer buffer;
-    const uint32_t buffer_descriptor = 1;
-    const off_t buffer_offset = 8;
+    const uint64_t buffer_descriptor = 1;
+    const off_t buffer_offmultiset = 8;
     const size_t buffer_size = 8;
-    const uint32_t buffer_chunk = 0;
-    bfs_buffer_init(&buffer, buffer_descriptor, buffer_offset,
+    const uint64_t buffer_chunk = 0;
+    bfs_buffer_init(&buffer, buffer_descriptor, buffer_offmultiset,
                     buffer_size, buffer_chunk);
     char *from = "123456789012345678901234567890";
     FILE *stream = fopen("/home/heorhii/bufferfs/test.txt", "r+");

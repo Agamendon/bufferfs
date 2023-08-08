@@ -3,6 +3,7 @@
 	<FileVersion major="1" minor="6" />
 	<Project>
 		<Option title="bufferfs" />
+		<Option platforms="Unix;" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -27,6 +28,7 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c99" />
 			<Add directory="/home/heorhii/bufferfs/include" />
 			<Add directory="/home/heorhii/bufferfs/src" />
 		</Compiler>
@@ -38,8 +40,24 @@
 		<Unit filename="bufferfs.layout" />
 		<Unit filename="include/CMakeLists.txt" />
 		<Unit filename="include/bfs_buffer.h" />
+		<Unit filename="include/bfs_file.h" />
+		<Unit filename="include/rtree.h" />
+		<Unit filename="include/set.h" />
+		<Unit filename="include/splay_tree.h" />
 		<Unit filename="src/CMakeLists.txt" />
 		<Unit filename="src/bfs_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/bfs_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/rtree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/splay_tree.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="test.txt" />

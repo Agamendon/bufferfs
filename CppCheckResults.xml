@@ -2,69 +2,223 @@
 <results version="2">
     <cppcheck version="2.11.1" />
     <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/set.h" line="3" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;alloca.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;alloca.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/rtree.h" line="10" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/rtree.h" line="11" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/rtree.h" line="12" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/bfs_file.h" line="3" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/bfs_buffer.h" line="1" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/bfs_buffer.h" line="2" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/bfs_buffer.h" line="3" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/bfs_buffer.h" line="4" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;pthread.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;pthread.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="/home/heorhii/bufferfs/include/bfs_file.h" line="5" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="bfs_file.c" line="2" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="bfs_file.c" line="3" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="bfs_file.c" line="4" column="0" />
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;buffer&apos; can be declared as pointer to const" verbose="Parameter &apos;buffer&apos; can be declared as pointer to const" cwe="398" file0="bfs_file.c">
+            <location file="bfs_file.c" line="59" column="55" info="Parameter &apos;buffer&apos; can be declared as pointer to const" />
+            <symbol>buffer</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;istn&apos; is assigned a value that is never used." verbose="Variable &apos;istn&apos; is assigned a value that is never used." cwe="563" file0="bfs_file.c">
+            <location file="bfs_file.c" line="52" column="18" />
+            <symbol>istn</symbol>
+        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="bufferfs.c" line="1" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bfs_buffer.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bfs_buffer.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="bufferfs.c" line="2" column="0" />
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="bufferfs.c" line="3" column="0" />
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;from&apos; can be declared as pointer to const" verbose="Variable &apos;from&apos; can be declared as pointer to const" cwe="398" file0="bufferfs.c">
+            <location file="bufferfs.c" line="16" column="11" info="Variable &apos;from&apos; can be declared as pointer to const" />
+            <symbol>from</symbol>
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="include/bfs_buffer.h" line="1" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="include/bfs_buffer.h" line="2" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;unistd.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="include/bfs_buffer.h" line="3" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="include/bfs_buffer.h" line="4" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="main.c" line="1" column="0" />
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="include/bfs_file.h" line="3" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;pthread.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;pthread.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="include/bfs_file.h" line="5" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;alloca.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;alloca.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="include/rtree.h" line="10" column="0" />
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="main.c" line="2" column="0" />
+            <location file="include/rtree.h" line="11" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bfs_buffer.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bfs_buffer.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="src/bfs_buffer.c" line="1" column="0" />
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="include/rtree.h" line="12" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="include/set.h" line="3" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="src/bfs_buffer.c" line="2" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;errno.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="src/bfs_buffer.c" line="3" column="0" />
         </error>
-        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="src/bfs_buffer.c">
-            <location file="src/bfs_buffer.c" line="86" column="5" />
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="src/bfs_buffer.c">
+            <location file="src/bfs_buffer.c" line="91" column="62" />
         </error>
-        <error id="constParameterPointer" severity="style" msg="Parameter &apos;buffer&apos; can be declared as pointer to const" verbose="Parameter &apos;buffer&apos; can be declared as pointer to const" cwe="398" file0="src/bfs_buffer.c">
-            <location file="src/bfs_buffer.c" line="28" column="41" info="Parameter &apos;buffer&apos; can be declared as pointer to const" />
-            <symbol>buffer</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="7" column="0" />
         </error>
-        <error id="constParameterPointer" severity="style" msg="Parameter &apos;buffer&apos; can be declared as pointer to const" verbose="Parameter &apos;buffer&apos; can be declared as pointer to const" cwe="398" file0="src/bfs_buffer.c">
-            <location file="src/bfs_buffer.c" line="50" column="40" info="Parameter &apos;buffer&apos; can be declared as pointer to const" />
-            <symbol>buffer</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdio.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="8" column="0" />
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;to_write&apos; is assigned a value that is never used." verbose="Variable &apos;to_write&apos; is assigned a value that is never used." cwe="563" file0="src/bfs_buffer.c">
-            <location file="src/bfs_buffer.c" line="85" column="18" />
-            <symbol>to_write</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="9" column="0" />
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &apos;buffer_init&apos; is never used." verbose="The function &apos;buffer_init&apos; is never used." cwe="561">
-            <location file="src/bfs_buffer.c" line="18" column="0" />
-            <symbol>buffer_init</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="10" column="0" />
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &apos;bfs_buffer_write&apos; is never used." verbose="The function &apos;bfs_buffer_write&apos; is never used." cwe="561">
-            <location file="src/bfs_buffer.c" line="28" column="0" />
-            <symbol>bfs_buffer_write</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;assert.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="11" column="0" />
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &apos;bfs_buffer_read&apos; is never used." verbose="The function &apos;bfs_buffer_read&apos; is never used." cwe="561">
-            <location file="src/bfs_buffer.c" line="50" column="0" />
-            <symbol>bfs_buffer_read</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="12" column="0" />
         </error>
-        <error id="unusedFunction" severity="style" msg="The function &apos;bfs_buffer_slide&apos; is never used." verbose="The function &apos;bfs_buffer_slide&apos; is never used." cwe="561">
-            <location file="src/bfs_buffer.c" line="72" column="0" />
-            <symbol>bfs_buffer_slide</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdbool.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="13" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdatomic.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdatomic.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/rtree.c" line="14" column="0" />
+        </error>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;index&gt;0&apos; is redundant or the array &apos;node-&gt;rects[64]&apos; is accessed at index 64, which is out of bounds." verbose="Either the condition &apos;index&gt;0&apos; is redundant or the array &apos;node-&gt;rects[64]&apos; is accessed at index 64, which is out of bounds." cwe="788" file0="src/rtree.c">
+            <location file="src/rtree.c" line="458" column="36" info="Array index out of bounds" />
+            <location file="src/rtree.c" line="458" column="18" info="Assuming that condition &apos;index&gt;0&apos; is not redundant" />
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;tmp&apos; shadows outer variable" verbose="Local variable &apos;tmp&apos; shadows outer variable" cwe="398" file0="src/rtree.c">
+            <location file="src/rtree.c" line="214" column="21" info="Shadow variable" />
+            <location file="src/rtree.c" line="210" column="17" info="Shadowed declaration" />
+            <symbol>tmp</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;tmp&apos; shadows outer variable" verbose="Local variable &apos;tmp&apos; shadows outer variable" cwe="398" file0="src/rtree.c">
+            <location file="src/rtree.c" line="218" column="22" info="Shadow variable" />
+            <location file="src/rtree.c" line="210" column="17" info="Shadowed declaration" />
+            <symbol>tmp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;jarea&apos; is assigned a value that is never used." verbose="Variable &apos;jarea&apos; is assigned a value that is never used." cwe="563" file0="src/rtree.c">
+            <location file="src/rtree.c" line="402" column="19" />
+            <symbol>jarea</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg='Include file: &quot;tests/priv_funcs.h&quot; not found.' verbose='Include file: &quot;tests/priv_funcs.h&quot; not found.'>
+            <location file="src/rtree.c" line="853" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/set.c" line="2" column="0" />
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: new_set" verbose="Memory leak: new_set" cwe="401" file0="src/set.c">
+            <location file="src/set.c" line="9" column="15" />
+            <symbol>new_set</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;ret&apos; can be declared as pointer to const" verbose="Variable &apos;ret&apos; can be declared as pointer to const" cwe="398" file0="src/set.c">
+            <location file="src/set.c" line="17" column="10" info="Variable &apos;ret&apos; can be declared as pointer to const" />
+            <symbol>ret</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdlib.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="src/splay_tree.c" line="2" column="0" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Unmatched &apos;)&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;)&apos;. Configuration: &apos;&apos;." file0="src/splay_tree.c">
+            <location file="src/splay_tree.c" line="66" column="13" />
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;bfs_file_create&apos; is never used." verbose="The function &apos;bfs_file_create&apos; is never used." cwe="561">
+            <location file="bfs_file.c" line="20" column="0" />
+            <symbol>bfs_file_create</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;iter_write_from_neighbors&apos; is never used." verbose="The function &apos;iter_write_from_neighbors&apos; is never used." cwe="561">
+            <location file="bfs_file.c" line="46" column="0" />
+            <symbol>iter_write_from_neighbors</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;search_intersections&apos; is never used." verbose="The function &apos;search_intersections&apos; is never used." cwe="561">
+            <location file="bfs_file.c" line="59" column="0" />
+            <symbol>search_intersections</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_set_udata&apos; is never used." verbose="The function &apos;rtree_set_udata&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="74" column="0" />
+            <symbol>rtree_set_udata</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_set_item_callbacks&apos; is never used." verbose="The function &apos;rtree_set_item_callbacks&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="549" column="0" />
+            <symbol>rtree_set_item_callbacks</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_insert&apos; is never used." verbose="The function &apos;rtree_insert&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="557" column="0" />
+            <symbol>rtree_insert</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_free&apos; is never used." verbose="The function &apos;rtree_free&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="618" column="0" />
+            <symbol>rtree_free</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_scan&apos; is never used." verbose="The function &apos;rtree_scan&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="689" column="0" />
+            <symbol>rtree_scan</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_count&apos; is never used." verbose="The function &apos;rtree_count&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="699" column="0" />
+            <symbol>rtree_count</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_delete&apos; is never used." verbose="The function &apos;rtree_delete&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="829" column="0" />
+            <symbol>rtree_delete</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_delete_with_comparator&apos; is never used." verbose="The function &apos;rtree_delete_with_comparator&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="835" column="0" />
+            <symbol>rtree_delete_with_comparator</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtree_clone&apos; is never used." verbose="The function &apos;rtree_clone&apos; is never used." cwe="561">
+            <location file="src/rtree.c" line="843" column="0" />
+            <symbol>rtree_clone</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_insert&apos; is never used." verbose="The function &apos;set_insert&apos; is never used." cwe="561">
+            <location file="src/set.c" line="15" column="0" />
+            <symbol>set_insert</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_delete&apos; is never used." verbose="The function &apos;set_delete&apos; is never used." cwe="561">
+            <location file="src/set.c" line="29" column="0" />
+            <symbol>set_delete</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_destroy&apos; is never used." verbose="The function &apos;set_destroy&apos; is never used." cwe="561">
+            <location file="src/set.c" line="35" column="0" />
+            <symbol>set_destroy</symbol>
         </error>
     </errors>
 </results>
