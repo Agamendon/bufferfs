@@ -1,1 +1,2 @@
-12345678
+# Project is dead
+# Long live the project
